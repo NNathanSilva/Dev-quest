@@ -1,0 +1,87 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-size: cover;
+    background-color: var(--body-background);
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header"
+                         "pagina-principal pagina-principal"
+                         "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.6rem;
+    max-width: 1440px;
+}
+
+.logo{
+    grid-area: header;
+    margin: 50px;
+}
+
+.pagina-principal{
+    height: 66vh;
+    display: flex;
+    grid-area: pagina-principal;
+}
+
+.pagina-principal .images{
+    margin: 0 50px;
+}
+
+.pagina-principal .menu{
+    color: #ffff;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    margin-right: 10px;
+}
+
+.pagina-principal .menu .menu-register h2{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.pagina-principal .menu .menu-register p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.pagina-principal .menu .menu-register a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    background-color: #ffff;
+    color: var(--btn-register);
+    border-radius: 30px;
+    font-size: 19px;
+}
+
+.pagina-principal .menu .menu-register a:hover{
+    color: #ffff;
+    background-color: var(--btn-register);
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .redes-socias{
+    font-size: 35px;
+    margin-right: 30px; 
+}
+
+.footer .redes-socias .redes{
+    margin-right: 20px;
+}
+
+.footer .redes-socias a:hover{
+    color: var(--btn-register);
+}

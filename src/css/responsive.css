@@ -1,0 +1,49 @@
+@media (max-width: 700px){
+    body{
+        height: 100vh;
+        background: url('../images/bg-mobile.svg') center center no-repeat;
+        background-color: var(--body-background);
+        background-size: cover;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .logo{
+        margin: 80px 40px 50px 40px;
+    }
+
+    .pagina-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .pagina-principal .images img{
+        width: 600px;
+        margin-top: 80px;
+    }
+
+    .pagina-principal .menu .menu-register p{
+        font-size: 30px;
+        margin: 40px;
+        line-height: 50px;
+    }
+
+    .pagina-principal .menu .menu-register a{
+        width: 300px;
+        height: 60px;
+        margin-left: 25%;
+    }
+
+    .footer{
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        margin-left: 40px;
+    }
+
+}    
